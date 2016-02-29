@@ -2,5 +2,5 @@
 An iOS 9 project dedicated to bringing you awesome desserts!
 ![Screenshot](YummyDesserts/Images.xcassets/screenshot.imageset/screenshot.png
 )
-![Screenshot](YummyDesserts/Images.xcassets/screenshot.imageset/red_velvet_detail.png
+![Screenshot](YummyDesserts/Images.xcassets/red_velvet_detail.imageset/red_velvet_detail.png
 )
