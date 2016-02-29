@@ -17,7 +17,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let food1 = Food(imageName: "dark_chocolate_rasp", description: "Dark Chocolote Raspberry CupCake", moreInfo: "it's yummy!")
+        let food1 = Food(imageName: "dark_chocolate_rasp", description: "Dark Chocolate Raspberry CupCake", moreInfo: "it's yummy!")
         let food2 = Food(imageName: "red_velvet.jpg", description: "Red Velvet Cake", moreInfo: "it's yummy!")
         let food3 = Food(imageName: "key_lime.jpg", description: "Key Lime Pie Donut", moreInfo: "it's yummy!")
         let food4 = Food(imageName: "tiramisu.jpg", description: "Tiramisu Cake", moreInfo: "it's yummy!")
@@ -69,6 +69,16 @@ class TableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let foodSelected = foodArray[indexPath.row]
+        var detailVC: DetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
+        
+        detailVC.imageDetail = foodSelected.imageName
+        detailVC.descriptionLabel = foodSelected.description
+        detailVC.moreInfoDetail = foodSelected.moreInfo
+        
+        self.presentViewController(detailVC, animated: true, completion: nil)
+    }
 
     
 }
