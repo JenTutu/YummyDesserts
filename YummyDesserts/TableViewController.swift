@@ -18,7 +18,7 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         
         let food1 = Food(imageName: "dark_chocolate_rasp", description: "Dark Chocolate Raspberry CupCake", moreInfo: "it's yummy!")
-        let food2 = Food(imageName: "red_velvet.jpg", description: "Red Velvet Cake", moreInfo: "it's yummy!")
+        let food2 = Food(imageName: "red_velvet.jpg", description: "Red Velvet Cake", moreInfo: "Decadent, gourmet Red Velvet Cake. It's yummy!")
         let food3 = Food(imageName: "key_lime.jpg", description: "Key Lime Pie Donut", moreInfo: "it's yummy!")
         let food4 = Food(imageName: "tiramisu.jpg", description: "Tiramisu Cake", moreInfo: "it's yummy!")
 
