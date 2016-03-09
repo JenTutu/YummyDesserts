@@ -64,7 +64,6 @@ class TableViewController: UITableViewController {
         cell.myImageView.image = UIImage(named: foodItem.imageName)
         cell.myLabel.text = foodItem.description
         
-
         return cell
     }
 
