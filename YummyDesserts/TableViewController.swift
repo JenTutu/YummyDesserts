@@ -54,7 +54,6 @@ class TableViewController: UITableViewController {
         return foodArray.count
     }
 
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! myCell
 
@@ -65,7 +64,7 @@ class TableViewController: UITableViewController {
         cell.myImageView.image = UIImage(named: foodItem.imageName)
         cell.myLabel.text = foodItem.description
         
-        
+
         return cell
     }
 
